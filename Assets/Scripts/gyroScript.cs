@@ -8,8 +8,6 @@ public class gyroScript : MonoBehaviour
     Gyroscope gyro;
     Compass compass;
     Quaternion originRot;
-
-    public Text attitude;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +27,7 @@ public class gyroScript : MonoBehaviour
         }
         else
         {
-            attitude.text = "No gyroscope";
+            Debug.Log("no gyroscope");
         }
     }
 }
