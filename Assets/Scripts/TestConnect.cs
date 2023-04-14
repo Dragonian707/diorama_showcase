@@ -28,7 +28,7 @@ public class TestConnect : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        print("Joind a room succesfully");
+        print("Joined a room succesfully");
         PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
     }
 }
